@@ -6,6 +6,25 @@ win10
 
 2021年2月7日  已经编译成功了.
 
+1.在当前父工程的基础上,新建一个gradle子项目(不要建maven的),
+以spring-mytest为名字
+2.在build.gradle中添加spring-context的依赖, 在dependencies
+ 中添加上  compile(project(":spring-context"))
+3.开始写最初始的spring应用代码.
+
+
+注入方式:
+构造方法和set方法注入.
+
+
+@Autowired
+默认使用type的,如果type没有找到,就根据属性名再找,
+否则就报错了,
+在属性上的时候, 通过反射的方式进行属性的注入,不适用set方法
+
+
+@Resource()
+可以指定名字和类型, 根据属性名注入.跟set方法的名字无关
 
 
 The following has been tested against IntelliJ IDEA 2016.2.2
