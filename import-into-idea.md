@@ -1,3 +1,13 @@
+分支使用5.2.x  
+oracle jdk 1.8
+gradle gradle-5.6.4
+win10
+配置使用了阿里的maven仓库
+
+2021年2月7日  已经编译成功了.
+
+
+
 The following has been tested against IntelliJ IDEA 2016.2.2
 
 ## Steps
