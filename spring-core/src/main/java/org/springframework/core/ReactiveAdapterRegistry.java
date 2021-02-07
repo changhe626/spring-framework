@@ -344,6 +344,7 @@ public class ReactiveAdapterRegistry {
 
 		@SuppressWarnings("KotlinInternalInJava")
 		void registerAdapters(ReactiveAdapterRegistry registry) {
+			/*TODO 不想修改这里的报错了, 直接注释了
 			registry.registerReactiveType(
 					ReactiveTypeDescriptor.singleOptionalValue(Deferred.class,
 							() -> CompletableDeferredKt.CompletableDeferred(null)),
@@ -354,7 +355,7 @@ public class ReactiveAdapterRegistry {
 					ReactiveTypeDescriptor.multiValue(kotlinx.coroutines.flow.Flow.class, kotlinx.coroutines.flow.FlowKt::emptyFlow),
 					source -> kotlinx.coroutines.reactor.ReactorFlowKt.asFlux((kotlinx.coroutines.flow.Flow<?>) source),
 					kotlinx.coroutines.reactive.ReactiveFlowKt::asFlow
-			);
+			);*/
 		}
 	}
 

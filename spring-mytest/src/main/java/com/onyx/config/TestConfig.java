@@ -2,6 +2,7 @@ package com.onyx.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 @ComponentScan("com.onyx")
 
@@ -9,6 +10,10 @@ import org.springframework.context.annotation.Configuration;
 //@ComponentScan(value = "com.onyx", nameGenerator = MyBeanNameGenerator.class)
 
 @Configuration
+
 public class TestConfig {
+
+
+
 
 }

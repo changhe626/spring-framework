@@ -7,6 +7,8 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
 
+import java.util.Arrays;
+
 /**
  * 这里一定要有@Component, 否则就是个独立的个体, 无法注入.
  */
@@ -33,6 +35,13 @@ public class MyApplicationAware implements ApplicationContextAware {
 
 		boolean cc3 = app2.getBean(UserDao.class).login("cc");
 		System.out.println("3" + cc3);
+
+
+		/**
+		 * 获取当前激活的环境信息
+		 */
+		String[] activeProfiles = applicationContext.getEnvironment().getActiveProfiles();
+		System.out.println("4" + Arrays.toString(activeProfiles));
 
 
 	}

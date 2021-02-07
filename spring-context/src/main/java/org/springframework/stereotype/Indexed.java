@@ -84,6 +84,11 @@ import java.lang.annotation.Target;
  * @author Stephane Nicoll
  * @since 5.0
  */
+
+/**
+ * 做索引, 加快项目的启动速度, 尤其是庞大的spring项目启动过慢,
+ * 加上这个注解会快点.
+ */
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
 @Documented

@@ -13,5 +13,7 @@ repositories {
 
 dependencies {
     compile(project(":spring-context"))
+    //添加indexed所以, 能够启动更快, 其实这个注解就是core里面,不用再引入了
+    //compile "org.springframework:spring-context-indexer:5.1.1"
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
